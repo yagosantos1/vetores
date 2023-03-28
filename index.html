@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VETORES</title>
+</head>
+<body>
+      <button onclick="Maior()";>MAIOR VALOR</button>
+      <button onclick="MENOR()";>MENOR VALOR</button>
+      <button onclick="Media()";>MEDIO VALOR</button>
+</body>
+
+    <script>
+        alturas = [0, 0, 0, 0, 0];
+        for (cont=0;cont<=4;cont++)
+        
+        {
+            n = prompt("Digite o numero" + (cont+1) );
+            n = parseInt (n);
+            alturas [cont] = n;
+
+        }
+
+        function Maior() 
+        {
+                maior = alturas [0];
+                for(cont=0;cont<=4;cont++)
+
+                {
+                    if(maior < alturas [cont])
+                            {
+                                maior = alturas [cont];
+                            }
+                }
+                alert (maior);
+
+            
+        }
+         function Menor() 
+        {
+                Menor = alturas[0];
+                for(cont=0;cont<=4;cont++)
+
+                {
+                    if(Menor > alturas [cont])
+                            {
+                                Menor = alturas [cont];
+                            }
+                }
+                alert (maior);
+
+            
+        }
+
+
+        function Media ()
+        {
+             soma = 0;
+             media = 0;
+             for(cont=0;cont<=4;cont++)
+             {
+                 soma = soma + alturas (cont);
+
+             }
+             media = soma / 5
+             alert (" A MEDIA É:" + media)
+
+        }
+    </script>
+
+</html>
